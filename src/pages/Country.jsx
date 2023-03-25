@@ -22,7 +22,7 @@ export const Country = () => {
     oneCountry();
   }, [countryId]);
   const goBackLink = location.state?.from ?? '/';
-  console.log(goBackLink)
+  
   return (
     <Section>
       <Container>

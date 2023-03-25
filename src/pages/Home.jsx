@@ -15,7 +15,6 @@ export const Home = () => {
 
     getEuropeCountries();
   }, []);
-  console.log(countries)
   return (
     <Section>
       <Container>
