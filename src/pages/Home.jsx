@@ -9,7 +9,7 @@ export const Home = () => {
   useEffect(() => {
     const getEuropeCountries = async () => {
       const data = await getCountries();
-      console.log(data);
+
       setCountries(data);
     };
 
