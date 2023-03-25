@@ -10,11 +10,12 @@ export const Home = () => {
     const getEuropeCountries = async () => {
       const data = await getCountries();
 
-      setCountries(data);
+      setCountries(data.filter(country => country.country !== "Russia"));
     };
 
     getEuropeCountries();
   }, []);
+  console.log(countries)
   return (
     <Section>
       <Container>

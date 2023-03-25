@@ -17,7 +17,7 @@ export const CountrySearch = () => {
   useEffect(() => {
     const region = searchParams.get('region');
     if (!region) return;
-    fetchByRegion(region).then(data => setCountries(data));
+    fetchByRegion(region).then(data => setCountries(data.filter(country => country.country !== "Russia")));
   }, [searchParams]);
 
   const onSubmit = region => {
